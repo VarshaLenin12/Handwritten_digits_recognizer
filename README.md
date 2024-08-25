@@ -1,89 +1,62 @@
 # Handwritten Digits Recognizer
 
+![GitHub repo size](https://img.shields.io/github/repo-size/VarshaLenin12/VarshaLenin12-Handwritten_digits_recognizer)
+![GitHub stars](https://img.shields.io/github/stars/VarshaLenin12/VarshaLenin12-Handwritten_digits_recognizer?style=social)
+![GitHub forks](https://img.shields.io/github/forks/VarshaLenin12/VarshaLenin12-Handwritten_digits_recognizer?style=social)
+
+Welcome to the Handwritten Digits Recognizer project! This project utilizes machine learning to recognize handwritten digits from images. The goal is to provide accurate digit classification based on images, aiding in various applications such as automated form processing and digit recognition.
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Model Details](#model-details)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Overview
-The **Handwritten Digits Recognizer** is a machine learning application designed to identify digits from images of handwritten numbers. Utilizing a convolutional neural network (CNN) built with TensorFlow and Keras, this project demonstrates an efficient and effective approach to image classification.
+The Handwritten Digits Recognizer is a machine learning application designed to classify handwritten digits from images. The project features a web interface built with Flask, allowing users to upload images and receive digit predictions.
+
+### Live Demo
+Check out the live demo of the project [here](https://handwritten-digits-recognizer.onrender.com/).
 
 ## Features
-- **Image Upload & Recognition:** Upload an image containing a handwritten digit, and the model predicts the digit with high accuracy of 0.9488.
-- **In-Memory Processing:** Images are processed in-memory for faster predictions without the need to save files on disk.
-- **User-Friendly Interface:** A clean and intuitive web interface powered by Flask, allowing easy interaction with the model.
-- **Responsive Design:** The web application is mobile-friendly and adapts seamlessly to different screen sizes.
-
-## Technologies Used
-- **Frontend:**
-  - HTML5 & CSS3
-  - Bootstrap for responsive design
-- **Backend:**
-  - Flask (Python)
-  - TensorFlow & Keras for the machine learning model
-  - OpenCV & Pillow for image processing
-- **Version Control:**
-  - Git & GitHub
+- 🖼️ Upload and classify handwritten digit images.
+- 🔍 Real-time predictions with a user-friendly web interface.
 
 ## Installation
+To get started with the Handwritten Digits Recognizer, follow these steps:
 
-### Prerequisites
-- Python 3.6+
-- `pip` package manager
-
-### Setup Instructions
-
-1. **Clone the Repository:**
-
-    ```bash
+1. **Clone the repository:**
+    ```sh
     git clone https://github.com/VarshaLenin12/VarshaLenin12-Handwritten_digits_recognizer.git
-    cd Handwritten_digits_recognizer
+    cd VarshaLenin12-Handwritten_digits_recognizer
     ```
 
-2. **Create a Virtual Environment:**
-
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+2. **Create and activate a virtual environment:**
+    ```sh
+    python3 -m venv venv
+    source venv/bin/activate   # On Windows, use `venv\Scripts\activate`
     ```
 
-3. **Install Dependencies:**
-
-    ```bash
+3. **Install the required packages:**
+    ```sh
     pip install -r requirements.txt
     ```
 
-4. **Download the Model:** 
+4. **Download the Model:**
    Ensure the trained model (`digit_recognition_model2.h5`) is in the root directory.
 
-5. **Run the Application:**
-
-    ```bash
+5. **Run the application:**
+    ```sh
     python app.py
     ```
 
-6. **Access the Application:** 
-   Open your web browser and go to `http://127.0.0.1:5000/`.
-
----
-
 ## Usage
-
-1. **Upload an Image:** Navigate to the home page and upload an image of a handwritten digit (supported formats: PNG, JPG, JPEG, GIF).
-2. **View Prediction:** The application processes the image and displays the predicted digit along with the uploaded image.
-
----
-
-## Project Structure
-
-```plaintext
-.
-├── app.py                        # Main Flask application
-├── digit_recognition_model2.h5   # Pre-trained model
-├── static/
-│   ├── ind_styles.css            # Custom CSS styles
-├── templates/
-│   ├── index.html                # Home page
-│   └── result.html               # Result page
-├── uploads/                      # (Optional) Directory for uploaded files
-├── README.md                     # Project documentation
-└── requirements.txt              # Python dependencies
+Once the application is running, access the web interface at `http://127.0.0.1:5000`. Upload an image of a handwritten digit and click "Predict" to get the classification result.
 
 ## Model Details
 
@@ -92,35 +65,32 @@ The **Handwritten Digits Recognizer** is a machine learning application designed
 - **Optimizer:** Adam
 - **Loss Function:** Categorical Crossentropy
 
----
+### Key Metrics:
+- **Accuracy:** High accuracy 0f 0.9488 in digit classification.
+- **Performance:** Efficient and fast predictions with minimal latency.
 
-## Demo
-
-[Handwritten Digits Recognizer Demo](https://youtu.be/demo_video_link)
-
----
+## Technologies Used
+- **Python:** Core programming language.
+- **Flask:** Web framework for frontend and backend.
+- **TensorFlow/Keras:** Machine learning library for model training and predictions.
+- **OpenCV:** Image processing library.
+- **NumPy:** Numerical computations.
+- **Pillow:** Image handling.
 
 ## Contributing
+Contributions are welcome! If you have suggestions or improvements, please create a pull request or open an issue.
 
-Contributions are welcome! If you'd like to improve or expand this project, feel free to fork the repository and submit a pull request. Please ensure your contributions align with the project's goals and style.
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/your-feature`
+5. Open a pull request.
 
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- [TensorFlow](https://www.tensorflow.org/) - Machine learning framework
-- [Flask](https://flask.palletsprojects.com/) - Lightweight WSGI web application framework
-- [OpenCV](https://opencv.org/) - Open Source Computer Vision Library
-
----
-
+##
 ## Contact
+If you have any questions or want to connect, feel free to reach out:
 
-For any inquiries or support, please reach out to me via [LinkedIn](www.linkedin.com/in/varsha-l-ml).
+- **Email:** [varshalenin999@gmail.com](mailto:varshalenin999@gmail.com)
+- **LinkedIn:** [Varsha L](https://www.linkedin.com/in/varsha-l-ml)
 
+Thank you for visiting the Handwritten Digits Recognizer project! Feel free to explore, use, and contribute to this project.
