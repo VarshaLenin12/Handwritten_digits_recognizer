@@ -1,6 +1,5 @@
 # Handwritten Digits Recognizer
 
-![Project Banner](https://user-images.githubusercontent.com/your_image.png)
 
 ## Overview
 The **Handwritten Digits Recognizer** is a machine learning application designed to identify digits from images of handwritten numbers. Utilizing a convolutional neural network (CNN) built with TensorFlow and Keras, this project demonstrates an efficient and effective approach to image classification.
