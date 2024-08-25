@@ -2,22 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.py",
+      "src": "handwritten_digit_recognition/app.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "app.py"
+      "dest": "handwritten_digit_recognition/app.py"
     }
   ],
   "env": {
     "FLASK_ENV": "production"
-  },
-  "functions": {
-    "api/*.py": {
-      "maxDuration": 10
-    }
   }
 }
